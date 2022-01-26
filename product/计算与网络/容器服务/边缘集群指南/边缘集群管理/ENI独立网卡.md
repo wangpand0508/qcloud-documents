@@ -22,6 +22,7 @@
 6. 在目标边缘集群的pod中配置ENI。
    - 配置截图:
   ![](https://qcloudimg.tencent-cloud.cn/raw/77d0d2111bafa54c86c608624427b5ac.png)
+   - 边缘节点ENI独立网卡能力，只能支持腾讯云 CVM 类型的节点资源，因此部署应用的时候，需要通过 nodeAffinity 的能力将挂载ENId独立网卡的应用 pod调度到实际的边缘 CVM 节点上，如下图所示（支持填写多个 CVM 节点 ID）：
   ![](https://qcloudimg.tencent-cloud.cn/raw/21de8282010886bfaf4ebb4de7456728.png)
    - 实际代码:
   ```
