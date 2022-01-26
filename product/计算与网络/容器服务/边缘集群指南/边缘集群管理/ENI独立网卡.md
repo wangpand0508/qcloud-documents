@@ -41,4 +41,9 @@
                   operator: In
                   values:
                   - cvm-2cxgi4ow #访问目标的cvm节点ID
-  ```
+[](id:closeEniNetwork)
+### 关闭ENI独立网卡
+1. 登录 [腾讯云容器服务控制台](https://console.cloud.tencent.com/tke2)，选择左侧导航栏中的**边缘集群**。
+2. 单击需要启用ENI独立网卡的集群 ID，进入该集群详情页。
+3. 选择页面左侧**基本信息**，进入集群基本信息页面，点击**开启独立网卡**开关,关闭ENI独立网卡功能，如下图所示：
+  ![](https://qcloudimg.tencent-cloud.cn/raw/ccff43c3422cfe2e5b1ffb08922ba350.png)
